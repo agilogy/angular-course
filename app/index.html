@@ -17,13 +17,67 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="angularCourseApp">
+  <body ng-app="angularCourseApp" data-spy="scroll" data-target=".bs-docs-sidenav">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">AngularJS course </a>
+            </div>
+                <p class="navbar-text navbar-right">Brought to you by <a href="#" class="navbar-link">Agilogy</a></p>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9" ng-view="">
+                
+            </div>
+            <div class="col-md-3">
+                <div class="bs-docs-sidebar">
+                    <ul class="nav bs-docs-sidenav">
+                        <li>
+                            <a href="#">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="#">Bootstrapping</a>
+                            <!-- <ul class="nav">
+                                <li><a href="#a">The declarative paradigm</a></li>
+                                <li><a href="#b">Data binding</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="#">The declarative paradigm</a>
+                        </li>
+                        <li>
+                            <a href="#">Data binding</a>
+                        </li>
+                        <li>
+                            <a href="#">Filters & repeaters</a>
+                        </li>
+                        <li>
+                            <a href="#">XHRs & Dependency Injection</a>
+                        </li>
+                        <li>
+                            <a href="#">Directives</a>
+                        </li>
+                        <li>
+                            <a href="#">Routing & Multiple Views</a>
+                        </li>
+                        <li>
+                            <a href="#">Unit and E2E testing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
