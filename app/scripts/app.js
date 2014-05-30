@@ -4,7 +4,8 @@ angular
 .module('angularCourseApp', [
   'ngSanitize',
   'ngRoute',
-  'mgcrea.ngStrap'
+  'mgcrea.ngStrap',
+  'hljs'
 ])
 
 .value('$anchorScroll', angular.noop)
