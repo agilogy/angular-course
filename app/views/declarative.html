@@ -2,9 +2,30 @@
 	<div class="page-header">
 		<h2>The declarative paradigm</h2>
 	</div>
+	<h3>Imperative way</h3>
+	<pre prettyprint>
+<xmp>
+<button id="my-button">Click</button>
+<script>
+	var btn = document.getElementById('my-button');
+	btn.addEventListener('click', function(){
+		alert('Clicked');
+	})
+</script>
+</xmp>
+	</pre>
+	<h3>Declarative way</h3>
+	<pre prettyprint>
+<xmp>
+<button id="my-button" ng-click="clickBtn()">Click</button>
+<script>
+	var clickBtn = function(){
+		alert('Clicked');
+	}
+</script>
+</xmp>
+	</pre>
 	<p class="lead">
-		Mustache XOXO post-ironic narwhal. Plaid roof party cardigan fingerstache selfies Echo Park. Cardigan vegan semiotics selfies Portland, chia cornhole mlkshk Echo Park readymade Williamsburg. Williamsburg cred tote bag, twee gentrify keffiyeh church-key retro meh kale chips master cleanse bicycle rights blog Blue Bottle. Locavore Banksy crucifix, Echo Park swag dreamcatcher direct trade slow-carb shabby chic banh mi readymade Etsy cornhole. Meh Godard tousled, mixtape locavore Odd Future kale chips ethnic YOLO bespoke. Shabby chic meggings put a bird on it organic paleo.
-
-		Mustache XOXO post-ironic narwhal. Plaid roof party cardigan fingerstache selfies Echo Park. Cardigan vegan semiotics selfies Portland, chia cornhole mlkshk Echo Park readymade Williamsburg. Williamsburg cred tote bag, twee gentrify keffiyeh church-key retro meh kale chips master cleanse bicycle rights blog Blue Bottle. Locavore Banksy crucifix, Echo Park swag dreamcatcher direct trade slow-carb shabby chic banh mi readymade Etsy cornhole. Meh Godard tousled, mixtape locavore Odd Future kale chips ethnic YOLO bespoke. Shabby chic meggings put a bird on it organic paleo.
+		This declarative approach greatly simplifies app development in a sort of WYSIWYG (what you see is what you get) way. Rather than spending time on how the program flows and what should get loaded first, you simply define what you want and Angular will take care of the dependencies.
 	</p>
 </div>
